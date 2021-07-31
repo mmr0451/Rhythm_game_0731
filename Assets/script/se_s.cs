@@ -5,15 +5,24 @@ using UnityEngine.UI;
 
 public class se_s : MonoBehaviour
 {
-    public AudioSource[] audioSource;
-    
+    // サンプル音
+    public AudioSource[] SampleAudioSource;
     SpriteRenderer spriteRenderer;
 
 
+    // 正解音
     public AudioSource[] audioSourceCheck;
     public GameObject ClearText;
 
-    // Start is called before the first frame update
+
+    // 再生・停止のアイコン
+    public Sprite icon_on;
+    public Sprite icon_off;
+
+    // フラグ
+    bool SampleSoundBool = true;
+    
+
     void Start()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -31,17 +40,36 @@ public class se_s : MonoBehaviour
 
     public void OnClick()
     {
-        if (audioSource[0].volume == 0.0f)
+        if (SampleSoundBool == true)
+        {
+            for(int i = 0; i < SampleAudioSource.Length; i++){
+                SampleAudioSource[i].volume = 1.0f;
+            }
+            //spriteRenderer.color = Color.red;
+            spriteRenderer.sprite = icon_on;
+            SampleSoundBool = false;
+        } else
+        {
+            for(int i = 0; i < SampleAudioSource.Length; i++){
+                SampleAudioSource[i].volume = 0.0f;
+            }
+            //spriteRenderer.color = Color.white;
+            spriteRenderer.sprite = icon_off;
+            SampleSoundBool = true;
+        }
+        /*
+        if (SampleAudioSource[0].volume == 0.0f)
         {
             spriteRenderer.color = Color.red;
-            audioSource[0].volume = 1.0f;
-            audioSource[1].volume = 1.0f;
+            SampleAudioSource[0].volume = 1.0f;
+            SampleAudioSource[1].volume = 1.0f;
         }
         else
         {
             spriteRenderer.color = Color.gray;
-            audioSource[0].volume = 0.0f;
-            audioSource[1].volume = 0.0f;
+            SampleAudioSource[0].volume = 0.0f;
+            SampleAudioSource[1].volume = 0.0f;
         }
+        */
     }
 }

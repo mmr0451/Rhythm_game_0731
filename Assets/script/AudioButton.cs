@@ -5,33 +5,30 @@ using UnityEngine;
 
 public class AudioButton : MonoBehaviour
 {
-    public AudioSource audioSource;
+    // 音とアイコン
+    AudioSource audioSource;
     SpriteRenderer spriteRenderer;
 
-    // Start is called before the first frame update
+    
+    // 持っている音と、アイコンを持つ
     void Start()
     {
+        audioSource = this.gameObject.GetComponent<AudioSource>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
     }
 
+    // ボタンを押すと、音のON/OFF
     public void OnClick()
     {
         if (audioSource.volume == 0.0f)
         {
             spriteRenderer.color = Color.red;
-            
-            /*
-            Color spr_co = spriteRenderer.color;
-            spr_co.a = 1f;
-            spriteRenderer.GetComponent<SpriteRenderer>().color = spr_co;
-            */
-            
             audioSource.volume = 1.0f;
         }
         else
@@ -39,8 +36,5 @@ public class AudioButton : MonoBehaviour
             spriteRenderer.color = Color.white;
             audioSource.volume = 0.0f;
         }
-
-
-        
     }
 }

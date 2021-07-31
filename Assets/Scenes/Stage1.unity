@@ -137,8 +137,9 @@ GameObject:
   - component: {fileID: 273971307}
   - component: {fileID: 273971306}
   - component: {fileID: 273971305}
+  - component: {fileID: 273971311}
   m_Layer: 0
-  m_Name: Circle (5)
+  m_Name: Icon_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -252,6 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49a5cb3d68c28747b64f42b98dece0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AnimCon: {fileID: 273971311}
 --- !u!114 &273971307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,13 +359,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273971304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: 0}
+  m_LocalPosition: {x: -0.7, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &273971311
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273971304}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e01ecea9bf5f49deb11b29d1209b99d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +670,7 @@ GameObject:
   - component: {fileID: 789629183}
   - component: {fileID: 789629182}
   m_Layer: 0
-  m_Name: Circle (6)
+  m_Name: Icon_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,6 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49a5cb3d68c28747b64f42b98dece0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AnimCon: {fileID: 0}
 --- !u!114 &789629184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,7 +890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789629181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1097,7 +1120,7 @@ GameObject:
   - component: {fileID: 1193755638}
   - component: {fileID: 1193755637}
   m_Layer: 0
-  m_Name: Circle (7)
+  m_Name: Icon_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1211,6 +1234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49a5cb3d68c28747b64f42b98dece0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AnimCon: {fileID: 0}
 --- !u!114 &1193755639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,7 +1340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193755636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 1, z: 0}
+  m_LocalPosition: {x: 2, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1576,7 +1600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619838321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1620,8 +1644,9 @@ GameObject:
   - component: {fileID: 2033600866}
   - component: {fileID: 2033600865}
   - component: {fileID: 2033600864}
+  - component: {fileID: 2033600870}
   m_Layer: 0
-  m_Name: Icon_
+  m_Name: Icon_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1735,6 +1760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49a5cb3d68c28747b64f42b98dece0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AnimCon: {fileID: 2033600870}
 --- !u!114 &2033600866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,10 +1866,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033600863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 1, z: 0}
+  m_LocalPosition: {x: -2, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2033600870
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033600863}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2957f93e9eb9645c2bc1c3ccf8488136, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

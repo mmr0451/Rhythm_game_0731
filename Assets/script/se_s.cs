@@ -31,8 +31,10 @@ public class se_s : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (audioSourceCheck[0].volume == 1.0f && audioSourceCheck[1].volume == 1.0f) {
-            ClearText.SetActive(true);
+        if (audioSourceCheck[2].volume == 0.0f && audioSourceCheck[3].volume == 0.0f) {
+            if (audioSourceCheck[0].volume == 1.0f && audioSourceCheck[1].volume == 1.0f) {
+                ClearText.SetActive(true);
+            }
         }
     }
 

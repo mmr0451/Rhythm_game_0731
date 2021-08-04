@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\script\SceneMove.cs" />
      <Compile Include="Assets\script\se_s.cs" />
      <Compile Include="Assets\script\AudioButton.cs" />
-     <Compile Include="Assets\script\SceneMove.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2021.2.0b4/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

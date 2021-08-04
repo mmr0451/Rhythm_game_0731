@@ -23,6 +23,7 @@ public class AudioButton : MonoBehaviour
     {
         if (audioSource.volume == 0.0f)
         {
+            audioSource.time = 0.0f;
             audioSource.volume = 1.0f;
             AnimCon.SetBool("icon_bool",true);
         }

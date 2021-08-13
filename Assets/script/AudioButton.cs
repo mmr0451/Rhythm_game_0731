@@ -35,24 +35,6 @@ public class AudioButton : MonoBehaviour
             PlayTime = Mathf.Lerp(0, 1, Mathf.Repeat(audioSource.time, 2)); 
             AnimCon.Play(AnimCon.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, PlayTime);
 
-            /*
-            PlayTime = Mathf.Lerp(0, 1, Mathf.Repeat(audioSource.time, 2)); 
-            Debug.Log("補完値　　" + PlayTime);
-            
-            AnimCon.Play(AnimCon.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, PlayTime);
-            */
-
-            //PlayTime = Mathf.Lerp(1, 0, Mathf.Repeat(audioSource.time, 2)); 
-            //Debug.Log("補完値　　" + PlayTime);
-
-            /*
-            AnimatorStateInfo animeStateInfo = AnimCon.GetCurrentAnimatorStateInfo(0);
-            float degrees = Mathf.Lerp(2, 0, Mathf.Repeat(animeStateInfo.normalizedTime, 1)); 
-            //AnimCon.Play(AnimCon.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, Random.Range(0f, 1f));
-            AnimCon.Play(AnimCon.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, degrees);
-    
-            Debug.Log("アニメの時間   " + degrees);
-            */
         }
         else
         {

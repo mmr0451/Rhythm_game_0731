@@ -12,6 +12,7 @@ public class AudioButton : MonoBehaviour
     public Animator AnimCon;
     public PlayableDirector playableDirector;
 
+    bool se_on_off = false;
     private bool _isEnabbleAnimation = false;
 
     
@@ -26,17 +27,17 @@ public class AudioButton : MonoBehaviour
     // ボタンを押すと、音のON/OFF
     public void OnClick()
     {
-        if (audioSource.volume == 0.0f)
+        if (se_on_off == false)
         {
             audioSource.volume = 1.0f;
             _isEnabbleAnimation = true;
-            
+            se_on_off = true;
         }
         else
         {
             audioSource.volume = 0.0f;
             _isEnabbleAnimation = false;
-            
+            se_on_off = false;
         }
     }
 

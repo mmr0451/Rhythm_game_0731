@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
-    public void Scene_Stage1() {
-        SceneManager.LoadScene("Stage1");
+    public void Scene_FreeMode() {
+        SceneManager.LoadScene("StageFreeMode");
+    }
+
+    public void Scene_DaimonjiMode() {
+        SceneManager.LoadScene("StageDaimonjiMode");
     }
 
     

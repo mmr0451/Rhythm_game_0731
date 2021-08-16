@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: 11194ed13caad4e42a0c4b178a6cc552
+  - enabled: 1
     path: Assets/Scenes/StageFreeMode.unity
     guid: 923472aebd1594aea9baacd82d5ce02f
+  - enabled: 1
+    path: Assets/Scenes/StageDaimonjiMode.unity
+    guid: a2f3148531a7a47d6bcef5d8b429ec72
   m_configObjects: {}

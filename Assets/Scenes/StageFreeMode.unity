@@ -537,7 +537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &731290584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,13 +633,14 @@ GameObject:
   - component: {fileID: 763537979}
   - component: {fileID: 763537978}
   - component: {fileID: 763537981}
+  - component: {fileID: 763537982}
   m_Layer: 5
   m_Name: ButtonHome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &763537977
 RectTransform:
   m_ObjectHideFlags: 0
@@ -657,8 +658,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -427, y: 426}
-  m_SizeDelta: {x: 78, y: 82}
+  m_AnchoredPosition: {x: -252.1, y: 255.2}
+  m_SizeDelta: {x: 47.53, y: 49.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763537978
 MonoBehaviour:
@@ -679,7 +680,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -766,6 +767,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7022ef6cedb41f58465f06408135ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &763537982
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763537976}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a425ea97587514362af811191ec7cb89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1011922471
 PrefabInstance:
   m_ObjectHideFlags: 0

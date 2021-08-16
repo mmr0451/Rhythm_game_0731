@@ -49,7 +49,8 @@ struct se_s_t0A59B8E27C4EB8BF263F1BE477028D63F8AC649E;
 
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteral8D4041E16926EB8CD78A1D7F27D9C3C82C472B58;
+IL2CPP_EXTERN_C String_t* _stringLiteral11C73DAE51BE323245415CD8810E10E484A8A854;
+IL2CPP_EXTERN_C String_t* _stringLiteralDD7DE83EFF1FF48290959E507809825128AEC99A;
 IL2CPP_EXTERN_C String_t* _stringLiteralF236A1A9250568E812F29DFD6996F01C77B70BC3;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m3E1EBDB4D8FA53122CE69A52ED55EED8554249DF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m4F30DAB8E5B57E8DB6BD8C0C3BB11CCB57690C4A_RuntimeMethod_var;
@@ -487,20 +488,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioButton__ctor_mB3BF981DB5E5ED7D13889
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void SceneMove::Scene_Stage1()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMove_Scene_Stage1_m1089EC32282D4BAF5664D8808CD4E639DE91FC93 (SceneMove_tCD46F7E9A656C3821AF6CD1049B9827E5DA1AF68* __this, const RuntimeMethod* method)
+// System.Void SceneMove::Scene_FreeMode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMove_Scene_FreeMode_m1351FDE1DD6FC2F29C46F908ACE46CDD14C66E80 (SceneMove_tCD46F7E9A656C3821AF6CD1049B9827E5DA1AF68* __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8D4041E16926EB8CD78A1D7F27D9C3C82C472B58);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral11C73DAE51BE323245415CD8810E10E484A8A854);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// SceneManager.LoadScene("Stage1");
+		// SceneManager.LoadScene("StageFreeMode");
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(_stringLiteral8D4041E16926EB8CD78A1D7F27D9C3C82C472B58, NULL);
+		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(_stringLiteral11C73DAE51BE323245415CD8810E10E484A8A854, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneMove::Scene_DaimonjiMode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMove_Scene_DaimonjiMode_m27239285D6FE1C796CC1780B5726D0EE53137983 (SceneMove_tCD46F7E9A656C3821AF6CD1049B9827E5DA1AF68* __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDD7DE83EFF1FF48290959E507809825128AEC99A);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene("StageDaimonjiMode");
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(_stringLiteralDD7DE83EFF1FF48290959E507809825128AEC99A, NULL);
 		// }
 		return;
 	}
